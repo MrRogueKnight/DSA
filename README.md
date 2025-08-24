@@ -1,25 +1,86 @@
-# DSA Playground
+# DSA Problem Solver
 
-A high-performance C++ template for solving Data Structures and Algorithms (DSA) problems with efficient I/O handling and a clean project structure. This template is designed to work with any coding platform and supports both class-based and function-based solutions.
+A clean, efficient environment for solving DSA problems with comprehensive testing.
 
-## 🚀 Features
+## 🚀 Quick Start
 
-- **Pre-configured Template**: Includes all common C++ headers and utilities
-- **Efficient I/O**: Fast input/output handling with helper methods
-- **Flexible Structure**: Supports both class-based and function-based solutions
-- **Competitive Programming Ready**: Optimized for coding competitions and interviews
-- **Multiple Test Cases**: Built-in support for handling multiple test cases
+1. **Copy the template**:
+   ```bash
+   cp problems/template/solution.cpp problems/your_problem_name/solution.cpp
+   ```
 
-## 📁 Project Structure
+2. **Edit the solution**:
+   - Implement your solution in the `Solution` class
+   - Update test cases in `main()`
+   - Add problem description in the header comment
+
+3. **Compile and run**:
+   ```bash
+   cd problems/your_problem_name
+   g++ -std=c++17 -o solution solution.cpp
+   .\solution
+   ```
+
+## 🛠️ Project Structure
 
 ```
 DSA/
-├── dsa_template.h    # Core template with includes and I/O helpers
-├── input.txt         # Input test cases (for local testing)
-└── problems/         # Directory for all problem solutions
-    ├── template.cpp  # Problem template (copy this for new problems)
-    └── second_largest.cpp  # Example solution
+├── problems/                    # All problem solutions
+│   ├── template/               # Problem template
+│   │   ├── solution.cpp        # Solution template with test framework
+│   │   ├── input.txt           # Sample input file
+│   │   └── output.txt          # Expected output
+│   └── second_largest/         # Example problem
+│       └── solution.cpp        # Implemented solution
+└── README.md                   # This file
 ```
+
+## 📋 Features
+
+- **Comprehensive Testing Framework**
+  - Easy-to-add test cases
+  - Detailed test output
+  - Support for different input types
+
+- **Flexible Input**
+  - Manual input mode
+  - File input support
+  - Predefined test cases
+
+- **Documentation**
+  - Problem description template
+  - Time/Space complexity analysis
+  - Key insights section
+
+## 🧪 Testing Your Solution
+
+1. **Using Predefined Tests**:
+   - Add test cases in `main()`
+   - Run with: `g++ -std=c++17 -o solution solution.cpp && .\solution`
+
+2. **Manual Testing**:
+   - Uncomment `manualTest()` in `main()`
+   - Run and enter custom input
+
+3. **File Input**:
+   - Uncomment `#define LOCAL_TEST`
+   - Add test cases to `input.txt`
+   - Run the program
+
+## 📝 Adding a New Problem
+
+1. Create a new directory:
+   ```bash
+   mkdir problems/your_problem_name
+   cd problems/your_problem_name
+   ```
+
+2. Copy the template:
+   ```bash
+   cp ../template/solution.cpp .
+   ```
+
+3. Start solving!
 
 ## 🛠️ Setup Instructions
 
