@@ -1,0 +1,106 @@
+              ┌──────────────────────────┐
+              │ Start:                   │
+              │ largest = -1             │
+              │ secondLargest = -1       │
+              └───────────┬──────────────┘
+                          │
+                          ▼
+              ┌──────────────────────────┐
+              │ For each num in arr:     │
+              └───────────┬──────────────┘
+                          │
+          ┌───────────────┴────────────────┐
+          │                                │
+          ▼                                ▼
+ ┌─────────────────────┐         ┌───────────────────────────┐
+ │ Is num > largest ?  │──Yes──▶ │ secondLargest = largest   │
+ └───────┬─────────────┘         │ largest = num             │
+         │                        └───────────────────────────┘
+         │ No
+         ▼
+ ┌─────────────────────────────┐
+ │ Is num > secondLargest AND  │
+ │ num != largest ?            │
+ └───────┬─────────────────────┘
+         │ Yes
+         ▼
+ ┌───────────────────────────┐
+ │ secondLargest = num       │
+ └───────────────────────────┘
+         │
+         ▼
+ ┌───────────────────────────┐
+ │ Move to next num in arr   │
+ └───────────────────────────┘
+         │
+         ▼
+ ┌───────────────────────────┐
+ │ After loop ends:          │
+ │ If secondLargest != -1    │
+ │   return secondLargest    │
+ │ else return -1            │
+ └───────────────────────────┘
+
+Input: arr = [10, 20, 4, 45, 99]
+
+Start: largest = -1, secondLargest = -1
+
+num = 10 → largest = 10, secondLargest = -1
+
+num = 20 → largest = 20, secondLargest = 10
+
+num = 4 → no change
+
+num = 45 → largest = 45, secondLargest = 20
+
+num = 99 → largest = 99, secondLargest = 45
+
+Output: 45
+
+
+
+/*
+// Case : Real Numbers 
+#include <cmath>   // for INFINITY
+
+class Solution {
+  public:
+    double getSecondLargest(vector<double> &arr) {
+        double largest = -INFINITY, secondLargest = -INFINITY;
+
+        for (double num : arr) {
+            if (num > largest) {
+                secondLargest = largest;
+                largest = num;
+            } else if (num > secondLargest && num != largest) {
+                secondLargest = num;
+            }
+        }
+        return (secondLargest > -INFINITY) ? secondLargest : -1.0;
+    }
+};
+
+
+Array: { -3.2, -1.5, -7.0, -0.8 }
+
+Start: largest = -∞, secondLargest = -∞
+
+First element -3.2 > -∞ → largest = -3.2, secondLargest = -∞
+
+Next -1.5 > -3.2 → secondLargest = -3.2, largest = -1.5
+
+Next -7.0 → smaller, ignored
+
+Next -0.8 > -1.5 → secondLargest = -1.5, largest = -0.8
+
+Output: -1.5
+*/
+
+
+Q) Also explain what happens in tricky cases like:
+
+[7.2, 7.2, 7.2] (all same numbers)
+
+[5.6] (only one number)
+
+[ -2.3, -9.8 ] (only negatives)?
