@@ -15,16 +15,23 @@ Given an array of integers, move all zeros to the end while maintaining the rela
    ```
    .\run.bat
    ```
+   This will automatically compile and run the solution.
 
 ### Manual Compilation and Execution
-1. Compile the solution:
-   ```
+1. First, compile the solution:
+   ```bash
    g++ -std=c++11 solution.cpp -o solution
    ```
-2. Run the executable:
-   ```
+2. Then run the executable:
+   ```bash
    .\solution
    ```
+
+### Quick One-Liner
+Alternatively, you can compile and run in one command:
+```bash
+g++ -std=c++11 solution.cpp -o solution && .\solution
+```
 
 ## Solution Details
 - **Time Complexity**: O(n) - Single pass through the array
