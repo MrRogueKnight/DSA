@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{1566B5B6-073E-4EF6-89BD-47FF1F8E4DA4}|DSA\\DSA.vcxproj|solutionrelative:problems\\second_largest.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1566B5B6-073E-4EF6-89BD-47FF1F8E4DA4}|DSA\\DSA.vcxproj|D:\\GitHub\\DataStructuresAndAlgorithms\\DSA\\dsa_template.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{1566B5B6-073E-4EF6-89BD-47FF1F8E4DA4}|DSA\\DSA.vcxproj|solutionrelative:dsa_template.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1566B5B6-073E-4EF6-89BD-47FF1F8E4DA4}|DSA\\DSA.vcxproj|D:\\GitHub\\DataStructuresAndAlgorithms\\DSA\\problems\\template.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{1566B5B6-073E-4EF6-89BD-47FF1F8E4DA4}|DSA\\DSA.vcxproj|solutionrelative:problems\\template.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1566B5B6-073E-4EF6-89BD-47FF1F8E4DA4}|DSA\\DSA.vcxproj|D:\\GitHub\\DataStructuresAndAlgorithms\\DSA\\dsa_template.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{1566B5B6-073E-4EF6-89BD-47FF1F8E4DA4}|DSA\\DSA.vcxproj|solutionrelative:dsa_template.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1566B5B6-073E-4EF6-89BD-47FF1F8E4DA4}|DSA\\DSA.vcxproj|D:\\GitHub\\DataStructuresAndAlgorithms\\DSA\\output.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
@@ -51,13 +51,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "template.cpp",
               "DocumentMoniker": "D:\\GitHub\\DataStructuresAndAlgorithms\\DSA\\problems\\template.cpp",
               "RelativeDocumentMoniker": "problems\\template.cpp",
               "ToolTip": "D:\\GitHub\\DataStructuresAndAlgorithms\\DSA\\problems\\template.cpp",
               "RelativeToolTip": "problems\\template.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAE8AAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAABOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-24T09:22:17.751Z",
               "EditorCaption": ""
@@ -98,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "dsa_template.h",
               "DocumentMoniker": "D:\\GitHub\\DataStructuresAndAlgorithms\\DSA\\dsa_template.h",
               "RelativeDocumentMoniker": "dsa_template.h",
