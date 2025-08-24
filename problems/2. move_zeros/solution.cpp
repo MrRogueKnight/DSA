@@ -60,6 +60,9 @@ void runTestCases() {
         {{1}, {1}, "Single element (non-zero)"},
         {{0}, {0}, "Single element (zero)"}
     };
+    
+    // Flush cout to ensure output is displayed immediately
+    cout << std::flush;
 
     cout << "\n=== Running Test Cases ===\n";
     int passed = 0;
@@ -102,8 +105,12 @@ void runTestCases() {
 }
 
 int main() {
+    // Disable synchronization with C I/O for better performance
     ios_base::sync_with_stdio(false);
+    // Untie cin from cout for better performance
     cin.tie(nullptr);
+    // Ensure cout is flushed before any input operation
+    cout << unitbuf;
 
     // Run test cases
     runTestCases();
@@ -111,6 +118,8 @@ int main() {
     // Uncomment for manual testing
     // manualTest();
     
+    // Explicitly flush the output
+    cout << flush;
     return 0;
 }
 
